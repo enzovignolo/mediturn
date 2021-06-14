@@ -6,4 +6,4 @@ class ErrorCreator extends Error {
   }
 }
 
-module.exports = ErrorCreator;
+export default ErrorCreator;

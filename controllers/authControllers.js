@@ -1,8 +1,13 @@
-const bcrypt = require('bcrypt');
+/* const bcrypt = require('bcrypt');
 const path = require('path');
 const Doctor = require(`${__dirname}/../models/doctorsModel.js`);
-const ErrorCreator = require(`${__dirname}/../utils/ErrorCreator`);
-exports.login = async (req, res, next) => {
+const ErrorCreator = require(`${__dirname}/../utils/ErrorCreator`); */
+
+import bcrypt from 'bcrypt';
+import Doctor from './../models/doctorsModel.js';
+import ErrorCreator from './../utils/ErrorCreator.js';
+
+const login = async (req, res, next) => {
   try {
     if (
       !req.body.userType ||
@@ -23,3 +28,5 @@ exports.login = async (req, res, next) => {
     next(err);
   }
 };
+
+export default { login };

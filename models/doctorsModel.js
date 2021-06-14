@@ -1,6 +1,10 @@
-const validator = require('validator');
+/* const validator = require('validator');
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt'); */
+
+import validator from 'validator';
+import mongoose from 'mongoose';
+import bcrypt from 'bcrypt';
 
 //Defines Doctor schema with fields and validators
 const doctorSchema = new mongoose.Schema({
@@ -58,4 +62,4 @@ doctorSchema.pre('save', async function (next) {
 const Doctor = mongoose.model('doctor', doctorSchema);
 
 //Exports the model
-module.exports = Doctor;
+export default Doctor;

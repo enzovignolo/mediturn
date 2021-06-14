@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "mediturn",
   "version": "1.0.0",
   "description": "API To make doctor's appointments",

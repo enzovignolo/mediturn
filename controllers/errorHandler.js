@@ -27,4 +27,4 @@ const errorHandler = (err, req, res, next) => {
     .json({ ERROR: err.msg || 'Oops! There was an error with that request' });
 };
 
-module.exports = errorHandler;
+export default errorHandler;
