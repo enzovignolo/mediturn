@@ -1,6 +1,3 @@
-/* const express = require('express');
-const patientControllers = require(`${__dirname}/../controllers/patientControllers`); */
-
 import { Router } from 'express';
 import patientControllers from './../controllers/patientControllers.js';
 
