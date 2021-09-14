@@ -9,14 +9,18 @@ import errorHandler from './controllers/errorHandler.js';
 import doctorRoutes from './routes/doctorRoutes.js';
 import patientRoutes from './routes/patientRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import appointmentRoutes from './routes/appointmentRoutes.js';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 //Middlewares
 app.use(express.json());
+app.use(cookieParser());
 
 //Routes
 app.use('/api/v1/doctors', doctorRoutes);
 app.use('/api/v1/patients', patientRoutes);
+app.use('/api/v1/appointments', appointmentRoutes);
 
 app.use('/api/v1', authRoutes);
 

@@ -8,4 +8,10 @@ const router = Router();
 
 router.post('/login', authControllers.login);
 
+router.post(
+	'/signUp/:userRole',
+	authControllers.signUp,
+	authControllers.login
+);
+
 export default router;

@@ -11,6 +11,8 @@
   "author": "Enzo Vignolo",
   "license": "ISC",
   "dependencies": {
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
